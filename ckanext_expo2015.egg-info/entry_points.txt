@@ -1,0 +1,6 @@
+
+        [ckan.plugins]
+        expo2015 = ckanext.expo2015.plugin:Expo2015Plugin
+        # Add plugins here, e.g.
+        # myplugin=ckanext.expo2015.plugin:PluginClass
+    

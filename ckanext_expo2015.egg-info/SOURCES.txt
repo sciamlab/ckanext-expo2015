@@ -1,0 +1,11 @@
+setup.py
+ckanext/__init__.py
+ckanext/expo2015/__init__.py
+ckanext/expo2015/plugin.py
+ckanext_expo2015.egg-info/PKG-INFO
+ckanext_expo2015.egg-info/SOURCES.txt
+ckanext_expo2015.egg-info/dependency_links.txt
+ckanext_expo2015.egg-info/entry_points.txt
+ckanext_expo2015.egg-info/namespace_packages.txt
+ckanext_expo2015.egg-info/not-zip-safe
+ckanext_expo2015.egg-info/top_level.txt
