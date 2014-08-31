@@ -1,5 +1,6 @@
 ===================================================
-ckanext-expo2015 - Open Expo 2015 plugins for CKAN
+ckanext-expo2015 
+Open Expo 2015 plugins for CKAN
 ===================================================
 
 
