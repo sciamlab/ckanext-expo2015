@@ -5,7 +5,7 @@ ckanext-expo2015 - Open Expo 2015 plugins for CKAN
 
 This extension contains plugins for:
 * Open Expo 2015 theme
-* add extra capabilities to CKAN_
+* add extra capabilities to [CKAN](http://ckan.org)
 
 Copying and License
 -------------------
@@ -16,4 +16,3 @@ whose full text may be found at:
 
 http://www.fsf.org/licensing/licenses/agpl-3.0.html
 
-.. _CKAN: http://ckan.org
