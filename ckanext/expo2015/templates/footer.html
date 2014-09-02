@@ -1,37 +1,60 @@
-<footer class="site-footer">
-  <div class="container">
-    {% block footer_content %}
-      <nav class="footer-links">
-        {% block footer_nav %}
-          <ul class="unstyled">
-            {% block footer_links %}
-              <li><a href="{{ h.url_for(controller='home', action='about') }}">{{ _('About {0}').format(g.site_title) }}</a></li>
-            {% endblock %}
-          </ul>
-          <ul class="unstyled">
-            {% block footer_links_ckan %}
-              {% set api_url = 'http://docs.ckan.org/en/{0}/api.html'.format(g.ckan_doc_version) %}
-              <li><a href="{{ api_url }}">{{ _('CKAN API') }}</a></li>
-              <li><a href="http://www.okfn.org/">{{ _('Open Knowledge Foundation') }}</a></li>
-              <li><a href="http://www.opendefinition.org/okd/"><img src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png"></a></li>
-            {% endblock %}
-          </ul>
-        {% endblock %}
-      </nav>
-      <div class="attribution">
-        {% block footer_attribution %}
-          <p>{% trans %}<strong>Powered by</strong> <a class="hide-text ckan-footer-logo" href="http://ckan.org">CKAN</a>{% endtrans %}</p>
-        {% endblock %}
-        {% block footer_lang %}
-          {% snippet "snippets/language_selector.html" %}
-        {% endblock %}
-      </div>
-    {% endblock %}
-  </div>
+  <div id="footer-wrapper"><div class="section">
 
-  {% block footer_debug %}
-    {% if g.debug %}
-      {% include 'snippets/debug.html' %}
-    {% endif %}
-  {% endblock %}
-</footer>
+          <div id="footer-columns" class="clearfix">
+          <div class="region region-footer-firstcolumn">
+    <div id="block-menu-menu-chi-siamo-openexpo" class="block block-menu">
+
+    <h2>Chi siamo </h2>
+  
+  <div class="content">
+    <ul class="menu clearfix"><li class="first leaf"><a href="http://www.agid.gov.it/" title=""> Agenzia per l’Italia Digitale</a></li>
+<li class="leaf"><a href="http://www.funzionepubblica.gov.it/" title=""> Funzione Pubblica</a></li>
+<li class="leaf"><a href="http://www.expo2015.org/it/index.html" title="">EXPO 2015</a></li>
+<li class="leaf"><a href="http://www.formez.it/" title="">Formez PA</a></li>
+<li class="last leaf"><a href="http://www.wikitalia.it/" title="">Wikitalia</a></li>
+</ul>  </div>
+</div>
+  </div>
+          <div class="region region-footer-secondcolumn">
+    <div id="block-menu-menu-informazioni-utili" class="block block-menu">
+
+    <h2>Informazioni Utili</h2>
+  
+  <div class="content">
+    <ul class="menu clearfix"><li class="first leaf"><a href="http://www.expo2015.org/it/amministrazione-trasparente" title="">Amministrazione trasparente</a></li>
+<li class="last leaf"><a href="http://89.97.56.42/" title="" class="active">Domande e Risposte</a></li>
+</ul>  </div>
+</div>
+  </div>
+          <div class="region region-footer-thirdcolumn">
+    <div id="block-menu-menu-varie" class="block block-menu">
+
+    <h2>Link utili</h2>
+  
+  <div class="content">
+    <ul class="menu clearfix"><li class="first leaf"><a href="http://89.97.56.42/" title="" class="active">Collabora con OpenExpo</a></li>
+<li class="last leaf"><a href="http://www.expo2015.org/it/progetto-open-expo--siglato-l-accordo-tra-wikitalia-e-expo-2015-spa" title="">Progetto</a></li>
+</ul>  </div>
+</div>
+  </div>
+          <div class="region region-footer-fourthcolumn">
+    <div id="block-menu-menu-sito" class="block block-menu">
+
+    <h2>Sito</h2>
+  
+  <div class="content">
+    <ul class="menu clearfix"><li class="first leaf"><a href="http://89.97.56.42/content/accessibilita" title="">Accessibilità</a></li>
+<li class="leaf"><a href="http://89.97.56.42/content/note-legali" title="">Note legali</a></li>
+<li class="leaf"><a href="http://89.97.56.42/content/privacy" title="">Privacy</a></li>
+<li class="leaf"><a href="http://89.97.56.42/content/infografica" title="">Infografica</a></li>
+<li class="leaf"><a href="http://www.dati.gov.it/catalog/developer" title="">Sviluppatori</a></li>
+<li class="leaf"><a href="http://89.97.56.42/content/scrivi-alla-redazione" title="">Scrivi alla redazione</a></li>
+<li class="last leaf"><a href="http://89.97.56.42/user" title="">Area riservata</a></li>
+</ul>  </div>
+</div>
+  </div>
+      </div> <!-- /#footer-columns -->
+    
+    
+  </div></div> <!-- /.section, /#footer-wrapper -->
+
