@@ -128,7 +128,7 @@ ul.menu li { margin: 0px; }
 h1#site-name { margin: 0px; }
 #site-name a { font-weight: normal; }
 #site-slogan { font-size: 0.929em; margin-top: 7px; word-spacing: 0.1em; font-style: italic; }
-#main-menu { clear: both; }
+#main-menu { clear: both; top: -15px; position: relative; }
 #main-menu-links { font-size: 0.929em; margin: 0px; padding: 0px 15px; }
 #main-menu-links li { float: left; list-style: none outside none; padding: 0px 1px; margin: 0px 1px; }
 #main-menu-links a { color: rgb(51, 51, 51); background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.7); float: left; height: 2.4em; line-height: 2.4em; padding: 0px 0.8em; text-decoration: none; text-shadow: 0px 1px rgb(238, 238, 238); border-top-left-radius: 8px; border-top-right-radius: 8px; }
@@ -168,8 +168,8 @@ body { font-family: Lato,arial,verdana,tahoma; }
 #name-and-slogan { margin: 0px; }
 #logo { padding: 5px; }
 #main-menu-links { margin: 0px; padding: 0px; }
-#main-menu-links li { background-image: url('separa_menu.png'); background-position: right center; background-repeat: no-repeat; }
-#main-menu-links li { background-image: url('separa_menu.png'); background-position: right center; background-repeat: no-repeat; margin: 0px; padding-right: 2px; }
+#main-menu-links li { background-image: url('../img/separa_menu.png'); background-position: right center; background-repeat: no-repeat; }
+#main-menu-links li { background-image: url('../img/separa_menu.png'); background-position: right center; background-repeat: no-repeat; margin: 0px; padding-right: 2px; }
 #main-menu-links li.last { background-image: none; }
 #main-menu-links li a { color: rgb(204, 37, 117); font-size: 16px; font-weight: bold; border-top-left-radius: 0px; border-top-right-radius: 0px; padding: 0px 7px; }
 #main-menu-links li a:link, #main-menu-links li a:hover, #main-menu-links li a:visited { background-color: rgb(255, 255, 255); }
@@ -227,6 +227,7 @@ ul.quicktabs-tabs.quicktabs-style-datagovit li.active a, ul.quicktabs-tabs.quick
 /* :::: OVERRIDE CKAN DEFAULT STYLES ::::*/
 [role="main"], .main {
   background:none;
+  padding-top: 0;
 }
 
 .wrapper {
