@@ -1,3 +1,5 @@
+{% set current_url = request.environ.CKAN_CURRENT_URL %}
+{% set current_lang = request.environ.CKAN_LANG %}
 {% block header_wrapper %}
 {% block header_account %}
 {% endblock %}
@@ -14,18 +16,23 @@
     
           <div id="name-and-slogan">
                   <div id="site-slogan">
-             Dati e trasparenza per Expo 2015          </div>
+             {{_("Dati e trasparenza per Expo 2015")}}          </div>
         
       </div> <!-- /#name-and-slogan -->
 
       <div id="main-menu" class="navigation">
          <h2 class="element-invisible">Menu principale</h2>
          <ul id="main-menu-links" class="links clearfix">
-           <li class="menu-246 first"><a href="/" title="Home Page di OpenExpo2015" class="active">HOME</a></li>
-           <li class="menu-1931"><a title="" href="/chart/lavori.html">CRUSCOTTO LAVORI</a></li>
-           <li class="menu-1344 active"><a href="/catalog/dataset" title="Cerca nel catalogo degli open data di Expo 2015">OPEN DATA</a></li>
-           <li class="menu-755 last"><a href="/notizie_pi%C3%B9_recenti" title="Le notizie di Open Expo">NOTIZIE</a></li>
-         </ul>
+           <li class="menu-246 first"><a href="/" title="" class="active">HOME</a></li>
+           <li class="menu-1931"><a title="" href="/chart/lavori.html">{{_("WORK DASHBOARD")}}</a></li>
+           <li class="menu-1344 active"><a href="/catalog/dataset" title="">OPEN DATA</a></li>
+           <li class="menu-755 last"><a href="/notizie_pi%C3%B9_recenti" title="">{{_("NEWS")}}</a></li>
+           <ul class="links pull-right">
+	  	<li class="right"><a href="{% url_for current_url, locale='it' %}">ITA</a></li>
+		<li class="right last"><a href="{% url_for current_url, locale='en' %}">ENG</a></li>
+	   </ul>
+	</ul>
+
      </div> <!-- /#main-menu -->
     
   </div></div> <!-- /.section, /#header -->

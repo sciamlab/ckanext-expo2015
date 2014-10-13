@@ -28,6 +28,30 @@ msgstr ""
 "Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: ckan/templates/ajax_snippets/api_info.html
+msgid "Access resource data via a web API with powerful query support"
+msgstr "Accedi ai dati delle risorse tramite una API con un potente supporto alle interrogazioni"
+
+#: ckan/templates/ajax_snippets/api_info.html
+msgid "Querying"
+msgstr "Interrogazioni"
+
+#: ckan/templates/ajax_snippets/api_info.html
+msgid "The Data API can be accessed via the following actions of the CKAN action API."
+msgstr "La Data API è accessibile tramite i seguenti metodi della CKAN action API."
+
+#: ckan/templates/ajax_snippets/api_info.html
+msgid "Further information in the"
+msgstr "Ulteriori informazioni nella"
+
+#: ckan/templates/ajax_snippets/api_info.html
+msgid "main CKAN Data API and DataStore documentation"
+msgstr "documentazione CKAN Data API and DataStore"
+
+#: ckan/templates/ajax_snippets/api_info.html
+msgid "A simple ajax (JSONP) request to the data API using jQuery."
+msgstr "Una richiesta ajax (JSONP) alla data API che utilizza jQuery"
+
 #: ckan/new_authz.py:189
 #, python-format
 msgid "Authorization function not found: %s"
@@ -2346,10 +2370,6 @@ msgstr "Leggi la documentazione"
 msgid "CKAN Data API"
 msgstr "CKAN Data API"
 
-#: ckan/templates/ajax_snippets/api_info.html:23
-msgid "Access resource data via a web API with powerful query support"
-msgstr "Access resource data via a web API with powerful query support"
-
 #: ckan/templates/ajax_snippets/api_info.html:24
 msgid ""
 " Further information in the <a       "
@@ -2360,12 +2380,6 @@ msgstr " Further information in the <a       href=\"http://docs.ckan.org/en/late
 #: ckan/templates/ajax_snippets/api_info.html:33
 msgid "Endpoints"
 msgstr "Endpoints"
-
-#: ckan/templates/ajax_snippets/api_info.html:37
-msgid ""
-"The Data API can be accessed via the following actions of the CKAN action "
-"API."
-msgstr "The Data API can be accessed via the following actions of the CKAN action API."
 
 #: ckan/templates/ajax_snippets/api_info.html:42
 #: ckan/templates/related/edit_form.html:7
@@ -2384,10 +2398,6 @@ msgstr "Query"
 msgid "Query (via SQL)"
 msgstr "Query (via SQL)"
 
-#: ckan/templates/ajax_snippets/api_info.html:66
-msgid "Querying"
-msgstr "Querying"
-
 #: ckan/templates/ajax_snippets/api_info.html:70
 msgid "Query example (first 5 results)"
 msgstr "Esempio di query (primi 5 risultati)"
@@ -2403,10 +2413,6 @@ msgstr "Esempio di query (via SQL statement)"
 #: ckan/templates/ajax_snippets/api_info.html:93
 msgid "Example: Javascript"
 msgstr "Esempio: Javascript"
-
-#: ckan/templates/ajax_snippets/api_info.html:97
-msgid "A simple ajax (JSONP) request to the data API using jQuery."
-msgstr "A simple ajax (JSONP) request to the data API using jQuery."
 
 #: ckan/templates/ajax_snippets/api_info.html:118
 msgid "Example: Python"
@@ -6325,3 +6331,24 @@ msgstr "Filtra su mappa"
 msgid "Clear"
 msgstr "Reimposta"
 
+#: CUSTOM menu
+msgid "WORK DASHBOARD"
+msgstr "CRUSCOTTO LAVORI"
+
+msgid "NEWS"
+msgstr "NOTIZIE"
+
+msgid "Data and trasparency for Expo 2015"
+msgstr "Dati e trasparenza per Expo 2015"
+
+msgid "About Open Expo"
+msgstr "Chi siamo"
+
+msgid "The Project"
+msgstr "Il progetto"
+
+msgid "What is Open Expo"
+msgstr "Cos'è Open Expo"
+
+msgid "Who makes Open Expo"
+msgstr "Chi realizza Open Expo"
