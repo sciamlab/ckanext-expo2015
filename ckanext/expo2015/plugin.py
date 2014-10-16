@@ -21,4 +21,3 @@ class Expo2015Plugin(plugins.SingletonPlugin):
       toolkit.add_template_directory(config, 'templates')
       toolkit.add_public_directory(config, 'public')
       toolkit.add_resource('public','ckanext-expo2015')
-
