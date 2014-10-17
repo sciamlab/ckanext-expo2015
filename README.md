@@ -25,7 +25,7 @@ Licensed under the GNU Affero General Public License (AGPL) v3.0
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     
-    *Sciamlab s.r.l.*
+    Sciamlab s.r.l.
     Via Ennio Quirino Visconti, 85
     00193 Roma - Italy
     info@sciamlab.com
