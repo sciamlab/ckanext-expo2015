@@ -3,6 +3,7 @@ Open Expo 2015 plugins for CKAN
 
 This extension contains plugins for:
 * Open Expo 2015 theme
+* Open Expo 2015 CKAN customization
 * add extra capabilities to [CKAN](http://ckan.org)
 
 License
