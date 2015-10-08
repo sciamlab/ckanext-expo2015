@@ -3,49 +3,47 @@
 {% block header_wrapper %}
 {% block header_account %}
 {% endblock %}
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable">Salta al contenuto principale</a>
-  </div>
+<header>
+<div class="container" style="">
+	<div id="header-row" class="row">
+	  <div id="logo" class="span6"> 
+          	<a href="/" title="Home" rel="home">
+        		<img style="max-width:95%" src="http://dati.openexpo2015.it/sites/default/files/logo-openexpo_0.png" alt="Home">
+          	</a>
+	  </div>
+          <div class="span6 lead">{{_("Dati e trasparenza per Expo 2015")}}</div>
+	</div>
 
+	    <div class="navbar">
+              <div class="navbar-inner">
+                <div class="container">
+		  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </a>
+                  <div class="nav-collapse collapse">
+                    <ul class="nav">
+			<li class="first leaf"><a href="/{{current_lang}}" title="Home Page di OpenExpo2015" class="active">HOME</a></li>
+			<li class="leaf"><a href="http://dati.openexpo2015.it/chart/lavori.html" title="Verifica lo stato di avanzamento dei lavori di Expo 2015">CRUSCOTTO LAVORI</a></li>
+			<li class="leaf"><a href="{% url_for controller='package', action='search' %}" title="Cerca nel catalogo degli open data di Expo 2015">OPEN DATA</a></li>
+			<li class="leaf"><a href="/{{current_lang}}/notizie_pi%C3%B9_recenti" title="Le notizie di Open Expo">NOTIZIE</a></li>
+			<li class="last leaf"><a href="/{{current_lang}}/expobarometro" title="">EXPO BAROMETRO</a></li>
+                    </ul>
+			<div>
+			<section id="block-locale-language" class="block block-locale clearfix">
+				<ul>
+					<li><a href="{% url_for current_url, locale='en' %}" class="language-link" xml:lang="en"><img class="language-icon" typeof="foaf:Image" src="http://dati.openexpo2015.it/sites/all/modules/languageicons/flags/en.png" width="16" height="12" alt="English" title="English"> English</a></li>
+					<li><a href="{% url_for current_url, locale='it' %}" class="language-link active" xml:lang="it"><img class="language-icon" typeof="foaf:Image" src="http://dati.openexpo2015.it/sites/all/modules/languageicons/flags/it.png" width="16" height="12" alt="Italiano" title="Italiano"> Italiano</a></li>
+				</ul>
+			</section>
+			</div>
 
+                  </div><!-- /.nav-collapse -->
+                </div>
+              </div><!-- /navbar-inner -->
+            </div>
 
-
-
-    <div id="page-wrapper">
-
-<div id="page">
-
-  <div id="header" class="without-secondary-menu">
-
-	<div class="section clearfix">
-
-          <a href="/" title="Home" rel="home" id="logo">
-        	<img src="/catalog/img/openexpo_logo.png" style="height:70px;" alt="Home">
-          </a>
-    
-          <div id="name-and-slogan">
-                  <div id="site-slogan">
-             		{{_("Dati e trasparenza per Expo 2015")}}          
-		  </div>
-        
-      	  </div> <!-- /#name-and-slogan -->
-
-      <div id="main-menu" class="navigation">
-         <h2 class="element-invisible">Menu principale</h2>
-         <ul id="main-menu-links" class="links clearfix">
-           <li class="menu-246 first"><a href="/" title="" class="active">HOME</a></li>
-           <li class="menu-1931"><a title="" href="/chart/lavori.html">{{_("WORK DASHBOARD")}}</a></li>
-           <li class="menu-1344 active"><a href="{% url_for controller='package', action='search' %}" title="">OPEN DATA</a></li>
-           <li class="menu-754"><a href="/notizie_pi%C3%B9_recenti" title="">{{_("NEWS")}}</a></li>
-           <li class="menu-755 last"><a href="/expobarometro" title="">{{_("EXPO BAROMETRO")}}</a></li>
-           <ul class="links pull-right">
-	  	<li class="right"><a href="{% url_for current_url, locale='it' %}">ITA</a></li>
-		<li class="right last"><a href="{% url_for current_url, locale='en' %}">ENG</a></li>
-	   </ul>
-	</ul>
-
-     </div> <!-- /#main-menu -->
-    
-  </div>
-</div> <!-- /.section, /#header -->
+<div>
+</header>
 {% endblock %}
