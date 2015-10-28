@@ -1,14 +1,13 @@
 {# Allows the DOCTYPE to be set on a page by page basis #}
-{%- block doctype %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">{% endblock -%}
+{%- block doctype %}<!DOCTYPE html>{% endblock -%}
 
 {# Allows custom attributes to be added to the <html> tag #}
 {%- block htmltag -%}
 {% set lang = h.lang() %}
-
 <!--[if IE 7]> <html lang="{{ lang }}" class="ie ie7"> <![endif]-->
 <!--[if IE 8]> <html lang="{{ lang }}" class="ie ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="{{ lang }}" class="ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="{{ lang }}" xmlns:xsd='http://www.w3.org/2001/XMLSchema#' xmlns:skos='http://www.w3.org/2004/02/skos/core#' xmlns:sioct='http://rdfs.org/sioc/types#' xmlns:sioc='http://rdfs.org/sioc/ns#' xmlns:rdfs='http://www.w3.org/2000/01/rdf-schema#' xmlns:og='http://ogp.me/ns#' xmlns:foaf='http://xmlns.com/foaf/0.1/' xmlns:dc='http://purl.org/dc/terms/' xmlns:content='http://purl.org/rss/1.0/modules/content/' dir='ltr' version='XHTML+RDFa 1.0' xmlns='http://www.w3.org/1999/xhtml'> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="{{ lang }}"> <!--<![endif]-->
 {%- endblock -%}
 
   {# Allows custom attributes to be added to the <head> tag #}
@@ -28,6 +27,7 @@
     {%- block meta -%}
       <meta charset="utf-8" />
       {% block meta_generator %}<meta name="generator" content="ckan {{ c.__version__ }}" />{% endblock %}
+      {% block meta_viewport %}<meta name="viewport" content="width=device-width, initial-scale=1.0">{% endblock %}
     {%- endblock -%}
 
     {#
@@ -83,8 +83,7 @@
       </style>
       {%- endif %}
     {% endblock %}
-    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
   </head>
 
   {# Allows custom attributes to be added to the <body> tag #}
